@@ -3,24 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+
     <header id="header">
-        <img id="header-img" src="" alt="Company Logo">
+            <a href="#header">
+                <img class="header-img" src="images/icons/pizza.png" alt="Company Logo">
+            </a>
         <!-- Navbar should be fixed (Story 13) -->
         <nav id="nav-bar">
-            <!-- Each link will take the user to a section of the landing page (Story 5) -->
-            <li class="nav-link"></li>
-            <li class="nav-link"></li>
-            <li class="nav-link"></li>
+            <ul class="nav-link">
+                <!-- Each link will take the user to a section of the landing page (Story 5) -->
+                <li class="nav-link">
+                    <a href="#pizza-box">Pizza Box?</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#products">Products</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#testamonials">Testamonials</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#demo">Demo</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <video id="video" src=""></video>
-    <form id="form" action="">
-        <input type="email" id="email" placeholder="Please enter your email" required>
-        <input type="submit" id="submit" value="Submit" formaction="https://www.freecodecamp.com/email-submit">
-    </form>
+
+    <main id="pizza-box">
+        <img src="images/pizza_box.jpg" alt="">
+        <div id="main-text">
+            <h1>Here at Pizza Box, we’ve done our research.</h1>
+            <p>Years in development, trial and error, product testing and improvements have brought us here today. Now, we have a self-service smart machine that allows for deeper connectivity with users, an unparalleled machine accuracy rate of 99.9%, and a way for you to enjoy delicious, fresh food in convenient locations you only dreamed of.</p>
+            <p>Imagine it: You’re slaving away at your desk well past quitting time, your stomach is growling uncomfortably loud, but you’re on a deadline. That’s where Just Baked comes in. We take the guesswork out of this common dilemma by making it easy (some might say, crazy easy) for you to grab a freshly baked pizza in less than 5 minutes. Sounds like a dream… dare we say, dream come true?”</p>
+        </div>
+    </main>
+
+    <section id="products">
+
+    </section>
+
+    <section id="testamonials">
+
+    </section>
+
+    <article id="demo">
+        <video id="video" src="https://www.youtube.com/watch?v=VPiGihA2XuQ"></video>
+    </article>
+
+    <div id="contact">
+        <form id="form" action="">
+            <input type="email" id="email" placeholder="Please enter your email" required>
+            <input type="submit" id="submit" value="Submit" formaction="https://www.freecodecamp.com/email-submit">
+        </form>
+    </div>
     
+    <footer>
+
+    </footer>
 </body>
 </html>
