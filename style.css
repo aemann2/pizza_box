@@ -98,7 +98,7 @@ h1 {
 .wrapper img {
     width: 35vh;
     margin: 0 4rem;
-    filter: brightness(100%)
+    filter: brightness(100%);
     -webkit-transition: filter .5s ease-out;
     transition: filter .5s ease-out;
 }
