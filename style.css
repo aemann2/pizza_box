@@ -1,4 +1,6 @@
 
+/* Margin and padding settings here allow the container colors to extend to the edge of the screen. */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +21,7 @@ body {
     align-items: center;
     background: rgba(201, 47, 20, 0.9);
     font-family: 'Rubik', sans-serif;
+    z-index: 2;
 }
 
 .header-img {
@@ -74,6 +77,10 @@ h1 {
     font-weight: 800;
 }
 
+.main-text p {
+    line-height: 1.4em;
+}
+
 #products {
     background-color: red;
 }
@@ -127,6 +134,45 @@ h1 {
     font-size: 2em;
     text-decoration: underline;
     transition: opacity .3s ease-out;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.card {
+    width: 15%;
+    border: 1px solid black;
+}
+
+.card img {
+    width: 20vmin;
+    border-radius: 60%;
+}
+
+.outline {
+    border: 1px solid red;
+}
+
+.card-name {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #333333
+}
+
+.card-job {
+    font-size: 1.2em;
+    font-weight: 200;
+    color: #717070
+}
+
+blockquote {
+    margin-top: 1.5em;
+    font-size: 1.3em;
+    font-weight: 200;
 }
 
 /* Use at least one media query (Story 14) */
