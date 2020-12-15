@@ -152,21 +152,29 @@ iframe {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-top: 6em;
+}
+
+.card-border {
+    border: 5px solid green;
+    margin-bottom: 4em;
 }
 
 .card {
     width: 23em;
-    margin: 4em 0;
     background-color: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.40), 0 6px 6px rgba(0, 0, 0, 0.48);
     box-sizing: border-box;
     transition: all 0.2s;
     border-radius: 6px;
+    position: relative;
+    bottom: 2em;
+    right: 2em;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.32), 0 16px 16px rgba(0, 0, 0, 0.36);
 }
 
 .outline {
