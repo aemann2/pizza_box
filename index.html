@@ -15,10 +15,8 @@
             <a href="#header">
                 <img class="header-img" src="images/icons/pizza.png" alt="Company Logo">
             </a>
-        <!-- Navbar should be fixed (Story 13) -->
         <nav id="nav-bar">
             <ul class="nav-link">
-                <!-- Each link will take the user to a section of the landing page (Story 5) -->
                 <li class="nav-link">
                     <a href="#header">Pizza Box?</a>
                 </li>
@@ -103,14 +101,28 @@
     </section>
 
     <div id="contact">
-        <form id="form" action="">
-            <input type="email" id="email" placeholder="Please enter your email" required>
-            <input type="submit" id="submit" value="Submit" formaction="https://www.freecodecamp.com/email-submit">
-        </form>
+        <div class="email-wrapper">
+            <p>Interested in a demo? Contact us:</p>
+            <form id="form" action="">
+                <input type="email" id="email" placeholder="Please enter your email" required>
+                <input type="submit" id="submit" value="Submit" formaction="https://www.freecodecamp.com/email-submit">
+            </form>
+        </div>
     </div>
     
     <footer>
-
+        <ul class="footer-links">
+            <li>
+                <a href="">Blog</a>
+            </li>
+            <li>
+                <a href="">Pizza Box Locator</a>
+            </li>
+            <li>
+                <a href="">Account</a>
+            </li>
+        </ul>
+        <p class="signature">Created by Adam Mann, 2020</p>
     </footer>
 </body>
 </html>

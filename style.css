@@ -148,6 +148,10 @@ iframe {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
 }
 
+#testimonials {
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 5px 14px 1px;
+}
+
 .cards {
     display: flex;
     justify-content: space-around;
@@ -172,9 +176,14 @@ iframe {
     right: 2em;
 }
 
-.card:hover {
+.card-border {
+    transform: scale(1.0);
+    transition: transform .3s ease-out;
+}
+
+.card-border:hover {
     transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.32), 0 16px 16px rgba(0, 0, 0, 0.36);
+    transition: transform .3s ease-in;
 }
 
 .outline {
@@ -214,6 +223,100 @@ blockquote {
     box-shadow: 1px 5px 14px 0px black;
 }
 
-/* Use at least one media query (Story 14) */
+#contact {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+}
 
-/* Use flexbox at least once (Story 15) */
+.email-wrapper {
+    padding: 4em;
+    border-radius: 6px;
+    margin-top: 3em;
+    background-color:white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23f99eaa' fill-opacity='0.58'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    
+}
+
+.email-wrapper p {
+    margin-top: -.5em;
+    font-size: 3.8vmin;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+#email {
+    margin: 2em 0 0 0;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.21em;
+    width: 35vh;
+    height: 5vh;
+    border: none;
+    transition: width .3s ease-out;
+}
+
+#email:focus {
+    width: 40vh;
+    transition: width .3s ease-in;
+}
+
+#submit {
+    display: block;
+    margin: 1em auto -.5em auto;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: .5em;
+    border: none;
+    filter: brightness(100%);
+    transition: filter .2s ease-out;
+}
+
+#submit:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+    transition: filter .2s ease-in;
+}
+
+footer {
+    background-color: red;
+    padding: 30px;
+    margin-top: 70px;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > ul > li {
+    padding: 0 12px;
+}
+
+.footer-links {
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.footer-links a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links a:hover {
+    color: rgb(20, 80, 26);
+}
+
+.signature {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+    margin: .5em .5em -.2em 0;
+}
+
+/* Use at least one media query (Story 14) */
