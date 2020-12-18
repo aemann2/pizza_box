@@ -1,10 +1,4 @@
 
-/* Needed for the moment, until I sort my content out with the media queries. Right now, it breaks the sticky navbar */
-
-/* html, body {
-    overflow-x:hidden;
-} */
-
 /* Margin and padding settings here allow the container colors to extend to the edge of the screen. */
 
 * {
@@ -81,9 +75,20 @@ nav ul {
     }
 }
 
+/* for ipad and ipad pro */
+
+@media (width: 768px), (width: 1024px) {
+    nav ul {
+        font-size: 2.5vw;
+    }
+
+    .header-img {
+        width: 9vh
+    }
+}
+
 main {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     margin: 3rem 0;
@@ -97,19 +102,62 @@ main {
 
 .main-text {
     flex-grow: 2;
-    width: 1em;
+    width: 3em;
     margin-right: 5em;
+    margin-left: -2em;
     font-weight: 200;
-    font-size: 3vmin;
+    font-size: 1.5vmax;
+    max-height: 85vmax;
 }
 
 .main-text h1 {
-    font-size: 7vmin;
+    font-size: 5vmax;
     font-weight: 800;
+    text-shadow: 0 0 rgba(0, 128, 0, .1);
 }
 
 .main-text p {
     line-height: 1.4em;
+}
+
+@media (max-width: 1250px) {
+    .main-text h1 {
+        font-size: 4.3vmax;
+        font-weight: 800;
+    }
+
+    .main-text {
+        font-size: 2.0vmax;
+        width: 8em;
+        margin-right: 2em;
+    }
+}
+
+@media (max-width: 560px) {
+    #pizza-box img {
+        width: 70vmax;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .main-text h1 {
+        font-size: 6vmax;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .main-text {
+        font-size: 2.5vmax;
+        margin: 2em auto;
+        width: 90vw;
+        text-align: justify;
+        max-height: none;
+    }
 }
 
 #products, #testimonials {
@@ -228,8 +276,13 @@ main {
     padding-top: 8em;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 iframe {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+    border: none;
 }
 
 @media (max-width: 800px){
@@ -279,7 +332,7 @@ iframe {
 }
 
 .quote-mark {
-    font-size: 7vmin;
+    font-size: 9vmin;
     font-weight: 800;
 }
 
