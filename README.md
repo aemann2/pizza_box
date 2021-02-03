@@ -12,15 +12,15 @@ Pretty much plain ol' HTML and CSS.
 
 ## What I learned or used for the first time:
 
-- Github for version control
-- Git branching
-- Markdown for project planning
-- Smooth scrolling
-- A transparent nav bar w/ a z-index
-- Flexbox
-- CSS Animation: filter, transition, scale, transform
-- Custom-made cards
-- SVG background images
-- Responsive design
+- **Github for version control**
+- **Git branching**
+- **Markdown for project planning**
+- **Smooth scrolling**
+- **A transparent nav bar w/ a z-index**
+- **Flexbox**
+- **CSS Animation: filter, transition, scale, transform**
+- **Custom-made cards**
+- **SVG background images**
+- **Responsive design**
 
 ...I used a ton of things for the first time here, and this project was like a sandbox for everything I was learning.
