@@ -8,13 +8,13 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 /* z index set to 2 in header to prevent it from sliding under images on the page */
 
 #header {
   position: sticky;
-  width: 100vw;
   top: 0;
   min-height: 4rem;
   display: flex;
@@ -30,16 +30,16 @@ body {
 }
 
 nav ul {
-  width: 30em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 2.5vh;
+  font-size: 2vmax;
   padding-right: 1em;
 }
 
 .nav-link {
   list-style: none;
+  margin-right: 1em;
 }
 
 .nav-link a:link,
@@ -269,10 +269,13 @@ main {
 }
 
 #demo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6em;
-  padding-top: 8em;
+  display: block;
+  margin: 0 0 6rem 2rem;
+  padding: 8em 3em 0 3em;
+}
+
+iframe {
+  width: 100%;
 }
 
 .hidden {
@@ -285,9 +288,13 @@ iframe {
 }
 
 @media (max-width: 800px) {
+  #demo {
+    margin: 2rem 0 2rem 0;
+    padding: 0 1rem 0 1rem;
+  }
+
   iframe {
     height: 50vh;
-    margin: 0 1em;
   }
 }
 
