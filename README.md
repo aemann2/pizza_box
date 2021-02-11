@@ -4,7 +4,7 @@ A website for a fictional pizza vending machine. This was originally a Free Code
 
 ## Background:
 
-This was my first real webpage that I thought looked somewhat professional. It's not perfect -- for example, I hadn't yet learned SASS and didn't even know what BEM was when I made it, so the CSS is much too verbose and there are too many wayward classes and inefficiencies of that kind. But I like the styling, and I think it's just funny. I'm choosing to leave some of the rough edges so I can look back one day when I'm a few years into my career and see where I was at with this project.
+This was my first real webpage that I thought looked somewhat professional. It's far from perfect -- for example, I hadn't yet learned SASS and didn't even know what BEM was when I made this, so the CSS is very overstyled and there are too many wayward classes and inefficiencies of that kind. But I like the overall styling, and I think it's just funny. I'm choosing to leave some of the rough edges so I can look back one day when I'm a few years into my career and see where I was at with this project.
 
 ## Technology:
 
