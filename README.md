@@ -1,5 +1,7 @@
 # [Pizza Box](https://aemann2.github.io/pizza_box/)
 
+<a href="https://aemann2.github.io/pizza_box/" target="_blank"><img src='https://user-images.githubusercontent.com/68879246/117074222-ed160c00-ace7-11eb-8a30-8567139d1d3b.png' alt='Pizza Box'></a>
+
 A website for a fictional pizza vending machine. This was originally a Free Code Camp project that I wanted to have a little fun with...I chose the most ridiculous concept I could think of, which turned out to be a semi-real product (which is where I got the image and the video).
 
 ## Background:
